@@ -1,0 +1,15 @@
+Behavior: It adds a quarter every time you reach a multiple of 25
+Input: 25
+Output: "1 quarter(s)"
+
+Behavior: It adds a dime every time you reach a multiple of 10
+Input: 35
+Output: "1 quarter(s), 1 dime(s)"
+
+Behavior: It adds a nickel every time you reach a multiple of 5
+Input: 40
+Output: "1 quarter(s), 1 dime(s), 1 nickel(s)"
+
+Behavior: It adds a penny every time you have a remainder
+Input: 42
+Output: "1 quarter(s), 1 dime(s), 1 nickel(s), 2 penn(ies)"

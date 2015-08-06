@@ -3,11 +3,11 @@ require('coin')
 
 describe('Fixnum#coin') do
   it('returns correct amount for 1 quarter') do
-    expect((25).coin()).to(eq("1 quarter(s)"))
+    expect((25).coin()).to(eq(1))
   end
 
   it('adds a quarter every time you reach a multiple of 25') do
-    expect((50).coin()).to(eq("2 quarter(s)"))
+    expect((50).coin()).to(eq(2))
   end
 end
 

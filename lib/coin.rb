@@ -7,10 +7,11 @@
 class Fixnum
   define_method(:coin) do
     amount = self
+    counter = 0
     while amount / (25) >= 1
       amount = amount - 25
-      return "1 quarter(s)"
-
+      counter = counter + 1
     end
+    counter
   end
 end

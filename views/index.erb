@@ -2,7 +2,10 @@
 <form action="/coin_counter">
   <div class="form-group">
     <label for="cents">Put in the amount in cents! e.g. $3.36 would be "336"</label>
-    <input id="cents" name="cents" class="form-control" type="number">
+    <input id="cents" name="cents" class="form-control" type="text">
   </div>
-  <button type="submit" class="btn-danger">Calculate coins!</button>
+  <button type="submit" class="btn-danger">
+    <span class="glyphicon glyphicon-usd" aria-hidden="true"></span>
+    Convert to coins!
+  </button>
 </form>

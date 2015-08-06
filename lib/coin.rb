@@ -49,31 +49,7 @@ define_method(:coin) do
   pennies_amount = pennies_amount - 1
   pennies_counter = pennies_counter + 1
   end
-  final_array.push(pennies_counter, "penn(ies),")
+  final_array.push(pennies_counter, "penn(ies)")
   final_array.join(" ")
   end
 end
-
-
-
-
-# class Fixnum
-#   define_method(:coin) do
-#     initial_amount = self
-#     amount = self
-#     counter = 0
-#     while amount / (25) >= 1
-#       amount = amount - 25
-#       counter = counter + 1
-#     end
-#     counter
-#   end
-#     dimes_remainder = initial_amount - (counter * 25)
-#     counter = 0
-#     while dimes_remainder / (10) >= 1
-#       dimes_remainder = dimes_remainder - 10
-#       counter = counter + 1
-#     end
-#     counter
-#   end
-# end

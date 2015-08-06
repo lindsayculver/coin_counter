@@ -1,8 +1,13 @@
-counter = 1
-until counter.==(50)
-  puts "quarter"
-  counter = counter.%(25) == 0
+require('sinatra')
+require('sinatra/reloader')
+require('./lib/title_case')
+also_reload('lib/**/*.rb')
+
+get('/') do
+  erb(:index)
 end
 
-until #remainder <=24
-  run dimes
+get('/coin_counter')
+  @coins = params.fetch('coins').coin()
+  erb(:coin_counter)
+end
